@@ -1,0 +1,145 @@
+/* EvaluationForm.css */
+@import url('components.css');
+
+.evaluation-form-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.evaluation-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.evaluation-form-header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.back-btn {
+  padding: 0.5rem 1rem;
+  background: var(--background-color);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.back-btn:hover {
+  background: var(--hover-color, #e0e8f0);
+  border-color: var(--primary-color);
+}
+
+.evaluation-form h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: var(--primary-color);
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.submit-btn,
+.delete-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.submit-btn {
+  background: var(--success-color, #28a745);
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background: var(--success-hover, #218838);
+}
+
+.delete-btn {
+  background: var(--danger-color, #dc3545);
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: var(--danger-hover, #c82333);
+}
+
+@media (max-width: 768px) {
+  .evaluation-form-container {
+    padding: 1rem;
+  }
+
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .evaluation-form-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .delete-btn {
+    width: 100%;
+  }
+}

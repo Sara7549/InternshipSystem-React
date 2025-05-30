@@ -1,0 +1,119 @@
+.report-actions {
+  display: flex;
+  justify-content: center; /* Center all buttons inside this container */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.delete-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem; /* Keep the delete button separate and spaced */
+}
+
+.edit-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.edit-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+.edit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #60a5fa;
+}
+
+.submit-btn {
+  background-color: #22c55e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.submit-btn:hover {
+  background-color: #16a34a;
+  transform: translateY(-1px);
+}
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4ade80;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.delete-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+.delete-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #f87171;
+}
+/* Ensure the section spans the full width */
+.dashboard-card.full-width {
+  grid-column: 1 / -1; /* Ensures the section spans all columns in a grid layout */
+  width: 100%; /* Full width of the container */
+  display: block; /* Prevents unintended stretching */
+}
+
+/* Style for the suggested-list container */
+.suggested-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates responsive cards */
+  gap: 20px; /* Adds space between items */
+}
+
+/* Style for each suggested item */
+.suggested-item {
+  background-color: #ffffff; /* Optional: Add a background color */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the buttons in the internship-actions container */
+.internship-actions {
+  display: flex; /* Align buttons side by side */
+  gap: 10px; /* Space between the buttons */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.apply-btn,
+.details-btn {
+  background-color: #2a5caa;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #1e4b8f;
+}
+
+.details-btn:hover {
+  background-color: #1e4b8f;
+}

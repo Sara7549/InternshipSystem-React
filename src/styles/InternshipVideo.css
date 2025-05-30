@@ -1,0 +1,15 @@
+.internship-video-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.internship-video-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.internship-video-container iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}

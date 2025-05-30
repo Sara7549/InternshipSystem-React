@@ -1,0 +1,57 @@
+/*NOUR*/
+.details-container {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 20px;
+  }
+  
+  .details-grid {
+    display: grid;
+    gap: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+ .details-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background-color: #2D3E50 !important;
+  color: white !important;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.back-btn-dashboard {
+  background-color: gray !important;
+  color: white !important;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
